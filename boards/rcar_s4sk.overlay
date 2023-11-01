@@ -7,6 +7,13 @@
 
 #include <mem.h>
 
+&mmc0 {
+	disk {
+		status = "okay";
+	};
+	status = "okay";
+};
+
 / {
 	firmware {
 		tee {

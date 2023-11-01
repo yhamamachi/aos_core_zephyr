@@ -28,9 +28,9 @@ int main(void)
     printk("*** Aos core size: %lu ***\n", sizeof(App));
 
 #if !defined(CONFIG_NATIVE_APPLICATION)
-    if (auto ret = littlefs_mount()) {
-        printk("Failed to mount littlefs (%d)\n", ret);
-    }
+    // if (auto ret = littlefs_mount()) {
+    //     printk("Failed to mount littlefs (%d)\n", ret);
+    // }
 
     reboot_watcher_init();
 

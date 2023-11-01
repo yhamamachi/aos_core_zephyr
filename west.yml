@@ -24,12 +24,9 @@ manifest:
     - name: yhamamachi
       url-base: https://github.com/yhamamachi
 
-    - name: local
-      url-base: /work/github/
-
   projects:
-    - name: zephyr-yhamamachi
-      remote: local
+    - name: zephyr
+      remote: yhamamachi
       revision: zephyr-v3.3.0-xt
       west-commands: scripts/west-commands.yml
 

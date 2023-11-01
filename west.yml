@@ -21,10 +21,13 @@ manifest:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
 
+    - name: iotbzh
+      url-base: https://github.com/iotbzh
+
   projects:
     - name: zephyr
-      remote: xen-troops
-      revision: b1ab92967739d06599231d0ee4f4c8d68a6681b0
+      remote: iotbzh
+      revision: d0472cb2bad0caec0476b0535c5759f7b79f4edc
       west-commands: scripts/west-commands.yml
 
     - name: aos_core_lib_cpp

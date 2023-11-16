@@ -480,11 +480,11 @@ static ssize_t get_ipl_image_size(void* image_info, uint64_t* size)
 }
 
 struct xen_domain_cfg domd_cfg = {
-    .mem_kb = 0x600000, /* 6Gb */
+    .mem_kb = 0x400000, /* 4Gb */
 
     .flags = (XEN_DOMCTL_CDF_hvm | XEN_DOMCTL_CDF_hap | XEN_DOMCTL_CDF_iommu),
     .max_evtchns = 10,
-    .max_vcpus = 7,
+    .max_vcpus = 6,
     .gnt_frames = 32,
     .max_maptrack_frames = 1,
 
